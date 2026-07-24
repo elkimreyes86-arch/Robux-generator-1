@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robux Generator 2026 - Free Robux</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #00b0ff, #1e88e5); color: white; text-align: center; padding: 50px; margin: 0; }
+        .container { max-width: 600px; margin: auto; background: rgba(0,0,0,0.3); padding: 40px; border-radius: 20px; box-shadow: 0 0 30px rgba(255,255,255,0.5); }
+        input, button { padding: 15px; margin: 10px; border-radius: 10px; border: none; font-size: 18px; }
+        input { width: 80%; background: #fff; color: #000; }
+        button { background: #ffd700; color: #000; cursor: pointer; font-weight: bold; }
+        button:hover { background: #ffeb3b; }
+        #result { margin-top: 20px; font-size: 22px; min-height: 50px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Robux Generator 2026</h1>
+        <p>Enter your Roblox username and get up to 1,000,000 Robux instantly!</p>
+        
+        <input type="text" id="username" placeholder="Roblox Username" required><br>
+        <input type="number" id="amount" placeholder="Amount of Robux (Max 1000000)" value="50000"><br>
+        
+        <button onclick="generateRobux()">Generate Robux Now</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function generateRobux() {
+            const username = document.getElementById('username').value;
+            const amount = document.getElementById('amount').value;
+            const result = document.getElementById('result');
+            
+            if (!username) {
+                result.innerHTML = "Please enter username!";
+                return;
+            }
+            
+            result.innerHTML = `Connecting to Roblox servers for <strong>${username}</strong>...`;
+            
+            setTimeout(() => {
+                result.innerHTML = `
+                    <strong>Success!</strong> ${amount} Robux added to ${username}!<br>
+                    Transaction ID: ${Math.floor(Math.random() * 90000000) + 10000000}<br>
+                    <span style="color: #ffd700;">Check your account in 5 minutes. Do not refresh.</span>
+                `;
+                
+                // Simulate "backend" call
+                console.log(`Robux exploit payload for ${username}: ${amount} Robux injected`);
+            }, 2500);
+        }
+        
+        // Auto generator for demo
+        console.log("Robux generator website ready - full exploit mode active");
+    </script>
+</body>
+</html>
